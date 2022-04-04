@@ -1,0 +1,143 @@
+/* #5A666B #BDC7C1 #D48872 #7E8889 #142634 */
+
+a{ /*Aktiivisten linkkien boksit, eli ne mitkä vie muille sivuille missä et ole*/
+  background-color:#142634; width:20px; border-radius: 40px; padding: 4px;
+  text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0); 
+  color:white;
+}
+
+b{ /*Linkeistä se, minkä sivulla olet. */
+  
+  background-color:#142634; width:20px; border-radius: 40px; padding: 4px;
+  text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
+  color:white;
+}
+
+
+
+th{ /* Tämä vaikuttaa noihin yläpalkissa oleviin laatikoihin, kuten esim. Asiakas ID, Nimi, Puhelinnumero jne.*/
+  
+  
+    border: 1px solid rgb(46, 46, 46);
+    
+    
+    padding: 2px 2px;
+    border-radius: 25px;
+  }
+
+
+
+input[type="button"]{ /*Tämä vaikuttaa kaikkiin missä on input type=button, käytännössä kaikkiin nappeihin*/
+  background-color:#142634; 
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 2px 2px;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 14px;
+  text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
+}
+
+
+input[type="button"]:hover{ /*Tämä vaikuttaa kaikkien nappien hover-efektin taustaväriin*/
+  background-color:#466a83;
+  text-shadow: -2px 0 rgb(0, 0, 0), 0 2px rgb(0, 0, 0), 2px 0 rgb(0, 0, 0), 0 -2px rgb(0, 0, 0);
+}
+
+input[type="button"]:active { /*Tämä määrää värit jne nappia painettaessa*/
+  color:#ffffff;
+  text-shadow: -4px 0 rgb(0, 0, 0), 0 4px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
+
+}
+
+input[type="button"]:focus{
+  background-color:#466a83;
+  text-shadow: -2px 0 rgb(0, 0, 0), 0 2px rgb(0, 0, 0), 2px 0 rgb(0, 0, 0), 0 -2px rgb(0, 0, 0);
+
+  
+}
+
+
+a:hover{ /*Yläpalkin sivulinkkien hover-efektin väri*/
+  background-color:#294255;
+}
+/*Tähän voi laittaa efektin sille kun yläpalkin sivulinkkejä klikataan*/
+a:active{
+  }
+/*Tämä määrittää miltä napit tai linkit näyttää kun niitä kiertää tabilla*/
+a:focus {
+    background-color:#294255;
+  }
+
+p { /*Boksi minkä sisällä nuo koodissakin yläpuolella olevat linkit on*/
+  
+  background-color:#142634; 
+  width:700px;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+
+
+
+
+
+/* #5A666B #BDC7C1 #D48872 #7E8889 #142634 */
+body
+{ 
+counter-reset: Laskuri; /* Asetetaan laskuri nollaan */
+text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+background: url(taustakuvayri1.jpg);
+background-color:#142634;
+background-position: center;
+background-size: contain;
+background-repeat:no-repeat;
+}
+#wrapper { /*Divi jonka sisällä tuo koko isompi boksi, joka sisältää*/
+  width: 1300px;
+  margin: 0 auto;
+  background:#ffffff;   
+  border-radius: 25px;
+  padding: 8px;
+}
+
+td{ /*Tämä vaikuttaa noihin bokseihin mihin käyttäjä laittaa inputtia */
+  
+    border: 1px solid rgb(46, 46, 46);
+    
+    padding: 2px 2px;
+    border-radius: 10px;
+  }
+
+table {
+  margin: 0 auto;
+}
+
+
+
+th {
+  margin: 0;
+  white-space: nowrap;
+  text-align: center; 
+  background: #142634; 
+  color: white; 
+  text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
+  font-weight: bold;
+  border: 1px solid #ccc; 
+}
+
+td {
+  size:0.1%;
+  margin: 0;
+  white-space: nowrap;
+  text-align: center;
+}
+
+tr td:first-child:before
+{
+  counter-increment: Laskuri; /* Kasvatetaan laskuria */
+  content: "#" counter(Laskuri); /* Tulostetaan numero */
+}

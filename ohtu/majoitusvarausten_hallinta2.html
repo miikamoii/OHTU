@@ -1,0 +1,76 @@
+<html>
+    <head>
+    <title>Majoitusvarausten hallinta</title>
+    <!-- Skripti rivienmuokkausnapeille -->
+    <script type="text/javascript" src="table_script3.js"></script>
+    <!--//-->
+
+    <!-- Skripti rivinumeroinnille -->
+    <link rel="stylesheet" type="text/css" href="css-serial.css"/>
+    <!--//-->
+    </head>
+    <body>
+    <!-- Tässä linkit eri sivuille -->
+        <center><h1>Majoitusvarausten hallinta</h1></center>
+        <center>
+            <p>
+                <a href="./Toimipisteiden_hallinta3.html">Toimipisteiden hallinta</a> | <a href="./palveluiden_hallinta2.html">Palveluiden hallinta</a> | <b>Majoitusvarausten hallinta</b> | <a href="./asiakashallintajärjestelmä2.html">Asiakashallinta</a>
+            </p>
+        </center>
+    <!--//-->
+        <div id="wrapper">
+            <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+                <!-- Sarakkeiden nimet -->
+                <tr>
+                    <th>Mökki #</th>
+                    <th>Asiakkaan nimi</th>
+                    <th>Asiakas ID</th>
+                    <th>Varattu aikaväli</th>
+                </tr>
+
+            <!-- Esimerkkiasiakas1-->
+                <tr id="rivi1">
+                    <td id="mök_rivi1"></td>
+                    <td id="asnim_rivi1">Eero Mönkkönen</td>
+                    <td id="asid_rivi1">17463</td>
+                    <td id="varat_rivi1">1.5.2018-1.6.2018</td>
+                    <!-- Rivinmuokkausnapit -->
+                    <td>
+                        <input type="button" id="edit_button1" value="Muokkaa" class="edit" onclick="edit_row('1')">
+                        <input type="button" id="save_button1" value="Tallenna" class="save" onclick="save_row('1')">
+                        <input type="button" value="Poista" class="delete" onclick="delete_row('1')">
+                    </td>
+                </tr>
+            <!--//-->
+            
+            <!-- Esimerkkiasiakas2-->
+                <tr id="rivi2">
+                    <td id="mök_rivi2"></td>
+                    <td id="asnim_rivi2">Jari Uimonen</td>
+                    <td id="asid_rivi2">23545</td>
+                    <td id="varat_rivi2">6.6.2018-12.6.2018</td>
+                    <!-- Rivinmuokkausnapit -->
+                    <td>
+                        <input type="button" id="edit_button2" value="Muokkaa" class="edit" onclick="edit_row('2')">
+                        <input type="button" id="save_button2" value="Tallenna" class="save" onclick="save_row('2')">
+                        <input type="button" value="Poista" class="delete" onclick="delete_row('2')">
+                    </td>
+                </tr>
+            <!--//-->
+                
+                <!-- Tässä uuden rivin tekstikentät -->
+                <tr>
+                    <td><input type="text" id="uusi_mök"></td>
+                    <td><input type="text" id="uusi_asnim"></td>
+                    <td><input type="text" id="uusi_asid"></td>
+                    <td><input type="text" id="uusi_varat"></td>
+                    <!-- rivinlisäysnappi -->
+                    <td>
+                        <input type="button" class="add" onclick="add_row();" value="Lisää Rivi">
+                    </td>
+                </tr>
+                <!--//-->
+            </table>
+        </div>
+     </body>
+</html>

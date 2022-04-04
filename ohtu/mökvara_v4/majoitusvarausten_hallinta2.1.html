@@ -1,0 +1,113 @@
+<html>
+    <head>
+    <title>Majoitusvarausten hallinta</title>
+    <!-- Skripti rivienmuokkausnapeille -->
+    <script type="text/javascript" src="table_script3.1.js"></script>
+    <!--//-->
+
+    <!-- Skripti rivinumeroinnille -->
+    <link rel="stylesheet" type="text/css" href="css-serial.css"/>
+    <!--//-->
+    </head>
+    <body> 
+
+     <!-- <div id=bar style="position:absolute; height:100px; width:0px; background:transparent;"> -->
+        
+        <div class="navbar" style=
+        "background-color:transparent; 
+        overflow:hidden;
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 17px;
+        font-weight:bolder;">         
+    <!-- Tässä linkit eri sivuille -->
+        <center><h1 style="
+            background-color:#142634; 
+            color:white;
+            text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0); 
+            width:420px;
+            border-radius: 25px;
+            padding: 5px;
+            ">Majoitusvarausten hallinta</h1></center>
+        <center>
+            <p >
+                <a href="./Toimipisteiden_hallinta3.1.html" >Toimipisteiden hallinta</a> | 
+                <a href="./palveluiden_hallinta2.1.html" >Palveluiden hallinta</a> | 
+                <b >Majoitusvarausten hallinta</b> | 
+                <a href="./asiakashallintajärjestelmä2.1.html" >Asiakashallinta</a>
+            </p>
+        </center>
+    </div>
+    <!--//-->
+
+        <div id="wrapper">
+            <table align='center'  cellspacing=5 cellpadding=3 id="data_table" border=1 >
+                <!-- Sarakkeiden nimet -->
+                <tr>
+                    <th  >Varaus ID</th>
+                    <th  >Asiakas ID</th>
+                    <th  >Toimipiste ID</th>
+                    <th  >Varaus pvm</th>    <!--milloin varaus tehty-->
+                    <th  >Vahvistus pvm</th>
+                    <th  >Varaus alku pvm</th>
+                    <th  >Varaus loppu pvm</th>
+                                                            
+
+                </tr>
+
+            <!-- Esimerkkiasiakas1-->
+                <tr id="rivi1">
+                    <td id="varaus_rivi1"></td>
+                    <td id="asid_rivi1">17463</td>
+                    <td id="toimid_rivi1">0001</td>   <!--esim joensuun toimipiste id = 0001-->
+                    <td id="varapvm_rivi1">1.6.</td>  <!-- varauksen teko pvm-->
+                    <td id="vahvpvm_rivi1">1.6.</td>
+                    <td id="varalku_rivi1">17.6.</td>
+                    <td id="varloppu_rivi1">30.6.</td>
+                    <!-- Rivinmuokkausnapit -->
+                    <td>
+                        <input type="button" id="edit_button1" value="Muokkaa" class="edit" onclick="edit_row('1')">
+                        <input type="button" id="save_button1" value="Tallenna" class="save" onclick="save_row('1')">
+                        <input type="button" value="Poista" class="delete" onclick="delete_row('1')">
+                    </td>
+                </tr>
+            <!--//-->
+            
+            <!-- Esimerkkiasiakas2-->
+                <tr id="rivi2">
+                        <td id="varaus_rivi2"></td>
+                        <td id="asid_rivi2">23545</td>
+                        <td id="toimid_rivi2">0002</td>   
+                        <td id="varapvm_rivi2">2.6.</td>  
+                        <td id="vahvpvm_rivi2">2.6.</td>
+                        <td id="varalku_rivi2">17.7.</td>
+                        <td id="varloppu_rivi2">30.7.</td>
+                    <!-- Rivinmuokkausnapit -->
+                    <td>
+                        <input type="button" id="edit_button2" value="Muokkaa" class="edit" onclick="edit_row('2')">
+                        <input type="button" id="save_button2" value="Tallenna" class="save" onclick="save_row('2')">
+                        <input type="button" value="Poista" class="delete" onclick="delete_row('2')">
+                    </td>
+                </tr>
+            <!--//-->
+                
+                <!-- Tässä uuden rivin tekstikentät -->
+                <tr>
+                    <td><input type="text" id="uusi_varaus"></td>
+                    <td><input type="text" id="uusi_asid"></td>
+                    <td><input type="text" id="uusi_toimid"></td>
+                    <td><input type="text" id="uusi_varapvm"></td>
+                    <td><input type="text" id="uusi_vahvpvm"></td>
+                    <td><input type="text" id="uusi_varalku"></td>
+                    <td><input type="text" id="uusi_varloppu"></td>
+                    <!-- rivinlisäysnappi -->
+                    <td>
+                        <input type="button" class="add" onclick="add_row();" value="Lisää Rivi">
+                    </td>
+                </tr>
+                <!--//-->
+            </table>
+        
+    </div>
+     </body>
+</html>

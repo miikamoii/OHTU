@@ -1,0 +1,96 @@
+<html>
+    <head>
+    <title>Asiakashallinta</title>
+    <!-- Skripti rivienmuokkausnapeille -->
+    <script type="text/javascript" src="table_script4.1.js"></script>
+    <!--TALLENNA NAPPI EI-->
+    <link rel="stylesheet" type="text/css" href="css-serial.css"/>
+    </head>
+    <body>
+    <!-- Tässä linkit eri sivuille -->
+        <center><h1 style="
+            background-color:#142634; 
+            color:white;
+            text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0); 
+            width:420px;
+            border-radius: 25px;
+            padding: 5px;
+            ">Asiakashallinta</h1></center>
+        <center>
+            <p>
+                <a href="./Toimipisteiden_hallinta3.1.html">Toimipisteiden hallinta</a> | <a href="./palveluiden_hallinta2.1.html">Palveluiden hallinta</a> | <a href="./majoitusvarausten_hallinta2.1.html">Majoitusvarausten hallinta</a> | <b>Asiakashallinta</b>
+            </p>
+        </center>
+    <!--//-->
+        <div id="wrapper" style="width:1459px">
+            <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+                <!-- Sarakkeiden nimet -->
+                <tr>
+                    <th>Asiakas ID</th>
+                    <th>Etunimi</th>
+                    <th>Sukunimi</th>
+                    <th>Puhelinnumero</th>
+                    <th>Sähköposti</th>
+                    <th>Lähiosoite</th>
+                    <th>Postinumero</th>
+                    <th>Postitoimipaikka</th>
+                </tr>
+
+            <!-- Esimerkkiasiakas1-->
+                <tr id="rivi1">
+                    <td id="asid_rivi1">17463</td>
+                    <td id="asetnim_rivi1">Eero</td>
+                    <td id="assuknim_rivi1">Mönkkönen</td>
+                    <td id="puh_rivi1">1234 567 890</td>
+                    <td id="säh_rivi1">eero.monkkonen@uef.fi</td>
+                    <td id="läh_rivi1">Yliopistokatu 2</td>
+                    <td id="post_rivi1">80100</td>
+                    <td id="kaup_rivi1">Joensuu</td>
+                    <!-- Rivinmuokkausnapit -->
+                    <td>
+                        <input type="button" id="edit_button1" value="Muokkaa" class="edit" onclick="edit_row('1')">
+                        <input type="button" id="save_button1" value="Tallenna" class="save" onclick="save_row('1')">
+                        <input type="button" value="Poista" class="delete" onclick="delete_row('1')">
+                    </td>
+                </tr>
+            <!--//-->
+
+            <!-- Esimerkkiasiakas2-->
+                <tr id="rivi2">
+                    <td id="asid_rivi2">23545</td>
+                    <td id="asetnim_rivi2">Jari</td>
+                    <td id="assuknim_rivi2">Uimonen</td>
+                    <td id="puh_rivi2">987 654 321</td>
+                    <td id="säh_rivi2">jari.uimonen@uef.fi</td>
+                    <td id="läh_rivi2">Koulukatu 26</td>
+                    <td id="post_rivi2">80110</td>
+                    <td id="kaup_rivi2">Joensuu</td>
+                    <!-- Rivinmuokkausnapit -->
+                    <td>
+                        <input type="button" id="edit_button2" value="Muokkaa" class="edit" onclick="edit_row('2')">
+                        <input type="button" id="save_button2" value="Tallenna" class="save" onclick="save_row('2')">
+                        <input type="button" value="Poista" class="delete" onclick="delete_row('2')">
+                    </td>
+                </tr>
+            <!--//-->
+                
+            <!-- Tässä uuden rivin tekstikentät -->
+                <tr>
+                    <td><input type="text" id="uusi_asid"></td>
+                    <td><input type="text" id="uusi_asetnim"></td>
+                    <td><input type="text" id="uusi_assuknim"></td>
+                    <td><input type="text" id="uusi_puh"></td>
+                    <td><input type="text" id="uusi_säh"></td>
+                    <td><input type="text" id="uusi_läh"></td>
+                    <td><input type="text" id="uusi_post"></td>
+                    <td><input type="text" id="uusi_kaup"></td>
+                    <!-- Rivinlisäysnappi -->
+                    <td>
+                        <input type="button" class="add" onclick="add_row();" value="Lisää Rivi">
+                    </td>
+                </tr>
+            <!--//-->
+            </table>
+        </div>
+     </body>
+</html>

@@ -1,0 +1,4 @@
+asiakashallinta, napit ei toimi
+majoitus, napit ei toimi
+
+palveluiden hallinta tallennus

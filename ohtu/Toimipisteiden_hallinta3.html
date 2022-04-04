@@ -1,0 +1,76 @@
+<html>
+    <head>
+    <title>Toimipisteiden hallinta</title>
+    <!-- Skripti rivienmuokkausnapeille -->
+    <script type="text/javascript" src="table_script.js"></script>
+    <!--//-->
+    </head>
+    <body>
+    <!-- Tässä linkit eri sivuille -->
+        <center><h1>Toimipisteiden hallinta</h1></center>
+        <center>
+            <p>
+                <b>Toimipisteiden hallinta</b> | <a href="./palveluiden_hallinta2.html">Palveluiden hallinta</a> | <a href="./majoitusvarausten_hallinta2.html">Majoitusvarausten hallinta</a> | <a href="./asiakashallintajärjestelmä2.html">Asiakashallinta</a>
+            </p>
+        </center>
+    <!--//-->
+        <div id="wrapper">
+            <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+                <!-- Sarakkeiden nimet -->
+                <tr>
+                    <th>Paikkakunta</th>
+                    <th>Osoite</th>
+                    <th>Puhelinnumero</th>
+                    <th>Sähköposti</th>
+                    <th>Aukioloajat</th>
+                </tr>
+
+            <!-- Esimerkkipaikkakunta1-->
+                <tr id="rivi1">
+                    <td id="paik_rivi1">Joensuu</td>
+                    <td id="os_rivi1">Torikatu 28</td>
+                    <td id="puh_rivi1">1234 567 890</td>
+                    <td id="säh_rivi1">joensuu@toimipiste.fi</td>
+                    <td id="auk_rivi1">8-18</td>
+                    <!-- Rivinmuokkausnapit -->
+                    <td>
+                        <input type="button" id="edit_button1" value="Muokkaa" class="edit" onclick="edit_row('1')">
+                        <input type="button" id="save_button1" value="Tallenna" class="save" onclick="save_row('1')">
+                        <input type="button" value="Poista" class="delete" onclick="delete_row('1')">
+                    </td>
+                </tr>
+            <!--//-->
+
+            <!-- Esimerkkipaikkakunta2-->
+                <tr id="rivi2">
+                    <td id="paik_rivi2">Jyväskylä</td>
+                    <td id="os_rivi2">Osoite 38</td>
+                    <td id="puh_rivi2">987 654 321</td>
+                    <td id="säh_rivi2">jyväskylä@toimipiste.fi</td>
+                    <td id="auk_rivi2">7-16</td>
+                    <!-- Rivinmuokkausnapit -->
+                    <td>
+                        <input type="button" id="edit_button2" value="Muokkaa" class="edit" onclick="edit_row('2')">
+                        <input type="button" id="save_button2" value="Tallenna" class="save" onclick="save_row('2')">
+                        <input type="button" value="Poista" class="delete" onclick="delete_row('2')">
+                    </td>
+                </tr>
+            <!--//-->
+            
+            <!-- Tässä uuden rivin tekstikentät -->
+                <tr>
+                    <td><input type="text" id="uusi_paik"></td>
+                    <td><input type="text" id="uusi_os"></td>
+                    <td><input type="text" id="uusi_puh"></td>
+                    <td><input type="text" id="uusi_säh"></td>
+                    <td><input type="text" id="uusi_auk"></td>
+                    <!-- Rivinlisäysnappi -->
+                    <td>
+                        <input type="button" class="add" onclick="add_row();" value="Lisää Rivi">
+                    </td>
+            <!--//-->
+                </tr>
+            </table>
+        </div>
+     </body>
+</html>

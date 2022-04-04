@@ -1,0 +1,25 @@
+Toimipisteiden hallinta: 
+
+eri toimipisteillä on eri palvelut sekä majoitukset/mökit. Toimipisteitä ympäri Suomea.
+
+(osoite, puhelinnumero (asiakaspalvelu, varaukset yms.), aukioloajat, sähköposti)
+toimipisteet:
+
+rovaniemi
+turku
+naantali
+hämeenlinna
+
+
+Palveluiden hallinta: 
+
+eri toimipisteillä eri palvelut. 
+-porosafari
+-koiravaljakko
+-airsoft
+-hevosajelu
+-vesiskootteriajelu
+
+Majoitusten hallinta: 
+
+Asiakashallintajärjestelmä:

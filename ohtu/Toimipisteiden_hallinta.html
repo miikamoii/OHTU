@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Toimipisteiden hallinta</title>
+    <script>
+      function lisaaRivi() {
+        var table = document.getElementById("toimipisteet");
+        var row = table.insertRow(5);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
+        var cell5 = row.insertCell(4);
+        cell1.innerHTML = "&nbsp";
+        cell2.innerHTML = "&nbsp";
+        cell3.innerHTML = "&nbsp";
+        cell4.innerHTML = "&nbsp";
+        cell5.innerHTML = "&nbsp";
+      }
+    </script>
+  </head>
+  <body>
+
+    <h1>Toimipisteiden hallinta</h1>
+    <p>Syöta toimipisteiden tiedot</p>
+
+    <style type="text/css">
+      .tg  {border-collapse:collapse;border-spacing:0;}
+      .tg td{font-family:Arial, sans-serif;font-size:14px;padding:0px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+      .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:0px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+      .tg .tg-um4r{background-color:#34cdf9;border-color:#000000}
+      .tg .tg-ufe5{background-color:#34cdf9;vertical-align:top}
+      .tg .tg-gcw3{border-color:#000000}
+      .tg .tg-yw4l{vertical-align:top}
+    </style>
+    <table id="toimipisteet", class="tg">
+      <tr>
+        <th class="tg-um4r">Kaupunki</th>
+        <th class="tg-um4r">Osoite</th>
+        <th class="tg-um4r">Puhelinnumero</th>
+        <th class="tg-um4r">Sähköposti</th>
+        <th class="tg-ufe5">Aukioloajat</th>
+      </tr>
+      <tr>
+        <td contenteditable="true", class="tg-gcw3"></td>
+        <td contenteditable="true", class="tg-gcw3"></td>
+        <td contenteditable="true", class="tg-gcw3"></td>
+        <td contenteditable="true", class="tg-gcw3"></td>
+        <td contenteditable="true", class="tg-yw4l"></td>
+      </tr>
+      <tr>
+        <td contenteditable="true", class="tg-gcw3"></td>
+        <td contenteditable="true", class="tg-gcw3"></td>
+        <td contenteditable="true", class="tg-gcw3"></td>
+        <td contenteditable="true", class="tg-gcw3"></td>
+        <td contenteditable="true", class="tg-yw4l"></td>
+      </tr>
+      <tr>
+        <td contenteditable="true", class="tg-gcw3"></td>
+        <td contenteditable="true", class="tg-gcw3"></td>
+        <td contenteditable="true", class="tg-gcw3"></td>
+        <td contenteditable="true", class="tg-gcw3"></td>
+        <td contenteditable="true", class="tg-yw4l"></td>
+      </tr>
+      <tr>
+        <td contenteditable="true", class="tg-gcw3"></td>
+        <td contenteditable="true", class="tg-gcw3"></td>
+        <td contenteditable="true", class="tg-gcw3"></td>
+        <td contenteditable="true", class="tg-gcw3"></td>
+        <td contenteditable="true", class="tg-yw4l"></td>
+      </tr>
+    </table>
+
+    <button onclick="lisaaRivi()">Lisää rivi</button>
